@@ -1,0 +1,28 @@
+README
+--------------
+
+Install stramer in Raspberrypi
+
+ sudo apt-get install motion
+
+Edit configuration file to turn off local streaming
+
+ change file /etc/motion/motion.conf
+
+Run Demon
+
+ sudo /etc/init.d/motion restart
+
+
+Install flask send the commands from webpage to Raspberry Pi  .
+
+pip install Flask
+from flask import Flask
+from flask import Flask, render_template, request
+
+Download package and store the robot.html in the templates folder which is in the same location of python code.
+
+
+Run python script in Raspberry pi which will provide the webpage in specific IP and port.
+
+From the PC we can access the webpage with IP address of RaspberryPi and can control with arrows in the webpage
